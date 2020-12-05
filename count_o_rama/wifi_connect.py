@@ -42,3 +42,14 @@ class ConnectWifi():
     def _debug(self,mes,end='\n'):
         if self.debug:
             print(mes,end=end)
+            
+            
+def create_access_point(essid="MicroAccess",password='mypass'):
+    # Create an access point
+    
+        ap = network.WLAN(network.AP_IF) # create access-point interface
+        ap.active(True) # activate the interface
+        ap.config(essid=essid,password=password) # set the ESSID of the access point
+        
+        return ap
+    

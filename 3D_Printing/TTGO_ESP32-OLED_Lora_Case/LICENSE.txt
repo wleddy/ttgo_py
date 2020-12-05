@@ -1,0 +1,3 @@
+TTGO ESP32-OLED Lora Case (http://www.thingiverse.com/thing:3443245) by yogotech is licensed under the Creative Commons - Attribution license.
+http://creativecommons.org/licenses/by/3.0/
+

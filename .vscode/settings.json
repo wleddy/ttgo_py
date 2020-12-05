@@ -1,0 +1,14 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "events_beta",
+            "database": "/Users/bleddy/Dropbox/Sites/staffing/instance/database.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "diffEditor.ignoreTrimWhitespace": false
+}
