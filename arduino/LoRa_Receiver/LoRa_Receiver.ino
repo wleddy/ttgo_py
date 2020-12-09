@@ -63,7 +63,7 @@ void setup() {
   
   LoRa.setSpreadingFactor(12);           // ranges from 6-12,default 7 see API docs
   // tried uping the error correction, but no effect
-  //LoRa.setCodingRate4(8);               // set the error correction bit length btwn 5 ~ 8
+  LoRa.setCodingRate4(5);               // set the error correction bit length btwn 5 ~ 8
   
   // Set the radio into receive mode
   LoRa.receive();

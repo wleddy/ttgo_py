@@ -28,10 +28,23 @@ After you create the object, you can get the value with `config('essid')
 
 ### I2C
 
-Was able to get I2C working on GIPO 18 (scl) and 19 (sda). GIPO 25 (slc) and 26 (sda) are supposed to work
-but I could not communicate using them. They did not return good device id's with .scan() function. Read
-a comment that the behavior I was seeing (list of many ids) may be an indication of a bad connection, but
-once I switched to ports 18 and 19 the problem went away without any connection changes.
+-- Update 12/6/20 - i2c bus is also available on GPIO 4 (sda) and 15 (slc). Pins 18 (scl) and 19 (sda) also worked
+but they are used for SPI communication with the built in LoRa radio, so I should not be using those, I think.
+
+### SPI
+
+Pins:
+    Here's a handy dictionary to set all the pins (These work with the built in LoRa radio)
+    ```device_config = {
+            'miso':19,
+            'mosi':27,
+            'ss':18,
+            'sck':5,
+            'dio_0':26,
+            'reset':14,
+        }```
+        
+    
 
 To solder the headers to 18 and 19 you need to unscrew the OLED mounting piece and pull the display and
 ribbon cable away a bit (use some tape) so that you can access the pads.
