@@ -24,6 +24,20 @@ It's important to add 10k ohm pullup resistors between vcc and the ss pin of eac
 
 Some wierdness... from my reading multiple slave devices on the SPI bus can share 
 SCK, MOSI, & MISO with SS as a separate connection to each device. So far I have only
-been able to get them to work with MOSI for the radio on 27, and MOSI for the rfid reader
+been able to get this to work with MOSI for the radio on 27, and MOSI for the rfid reader
 on 23. Also, SS should be able to be any bidirecional pin not used eslewhere, but I 
 can only get the rfid reader working with SS on 17.
+
+## Breadboard Connections:
+
++------------+------------------+-------------+
+| Pin Name   | ESP32 Board.     | MFRC522     |
++------------+------------------+-------------+
+| SCK        | GPIO 5           | SCK         |
+| MOSI       | GPIO 23          | MOSI        |
+| MISO       | GPIO 19          | MISO        |
+| SS         | GPIO 17          | SDA         |
+| PullUp 10K | GPIO 18 to vcc   | vcc to SDA  |
++------------+------------------+-------------+
+
+

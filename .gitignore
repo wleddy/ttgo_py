@@ -8,6 +8,10 @@ instance*
 # micropython libraries
 uPy*
 
+# vscode
+.vscode*
+.micropythonrc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

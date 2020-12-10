@@ -10,5 +10,6 @@
         }
     ],
     "sqltools.useNodeRuntime": true,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.pythonPath": "env/bin/python"
 }
